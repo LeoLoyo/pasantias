@@ -9,48 +9,69 @@
 		{!! Html::style('bower_components/bootstrap-material-design/dist/css/ripples.min.css') !!}
 		{!! Html::style('bower_components/bootstrap-material-design/dist/css/roboto.min.css') !!}
 		{!! Html::style('bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css') !!}
+<style>
+	.contenedor{
+		display: table;
+		height:50em;
+	}
 
+	.center{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.title{
+		text-align: center;
+		color: #424242;
+	}
+	body{
+		background-image: url(css/independencia.jpg);
+	}
+
+
+</style>
 	</head>
 	<body>
-	<div class="container">
-						<form class="form-horizontal">
-					<fieldset>
+			<div class="container contenedor">
+			<div class="row center ">
 
-					<!-- Form Name -->
-					<legend>Form Name</legend>
+				
+				<div class="col-md-offset-4 col-md-4 well" >
+					<form action="" class="form-horizontal">
+						<div class="form-group title">
+							<h3>Ingreso al Sistema</h3>
+						</div>
+						<div class="form-group">
+							
+							<select class="selectpicker form-control" data-style="btn-primary">
+								<option value=""> </option>
+								<option title="Combo 1">Presidencia</option>
+							    <option title="Combo 2">Telecominicaciones</option>
+							    <option title="Combo 3">Taller</option>
+					    	</select>  
 
-					<!-- Text input-->
-					<div class="control-group">
-					  <label class="control-label" for="Usuario">Usuario</label>
-					  <div class="controls">
-					    <input id="Usuario" name="Usuario" type="text" placeholder="" class="input-xlarge">
-					    
-					  </div>
-					</div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Usuario"  >
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Password">
+						</div>
+						<div class="form-group">
+					    	<div class="col-md-offset-1 col-md-11">
+					      		<button type="submit" class="btn btn-success" style="width:130px">Entrar</button>
+					      		<button type="submit" class="btn btn-danger" style="width:130px">Cancelar</button>
+					    	</div>
+					  	</div>
 
-					<!-- Password input-->
-					<div class="control-group">
-					  <label class="control-label" for="Contraseña">Contraseña:</label>
-					  <div class="controls">
-					    <input id="Contraseña" name="Contraseña" type="password" placeholder="" class="input-xlarge">
-					    
-					  </div>
-					</div>
-
-					<!-- Button (Double) -->
-					<div class="control-group">
-					  <label class="control-label" for="button1id"></label>
-					  <div class="controls">
-					    <button id="button1id" name="button1id" class="btn btn-success">Iniciar Sesion</button>
-					    <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
-					  </div>
-					</div>
-
-					</fieldset>
 					</form>
-					</div>
 
 
+				</div>
+
+			</div>
+			
+		</div>
+	
 
 	</body>
 </html>
